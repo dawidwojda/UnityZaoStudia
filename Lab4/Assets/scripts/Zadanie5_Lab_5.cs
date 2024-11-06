@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zadanie5_Lab5 : MonoBehaviour
+public class Zadanie5_Lab_5 : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 playerVelocity;
@@ -39,7 +39,6 @@ public class Zadanie5_Lab5 : MonoBehaviour
         controller.Move(playerVelocity * Time.deltaTime);
     }
 
-    // Funkcja do wyrzucenia gracza z p³yty naciskowej
     public void LaunchPlayer(float multiplier)
     {
         playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravityValue * multiplier);
